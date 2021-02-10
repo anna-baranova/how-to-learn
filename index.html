@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendors/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="ЯндрексПрактикум">
+      <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#" target="_blank">Узнать &rarr;</a></p>
       <img class="header__main-illustration" src="./images/header-image.png" alt="Мальчик с собакой">
@@ -64,10 +63,14 @@
       <section class="video">
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-         <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <ul class="video__iframes">
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </li>  
+        </ul>
       </section>
 
       <section class="oakley">
@@ -83,7 +86,7 @@
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a class="feynman__link" href="#" target="_blank">Подробнее &rarr;</a>
-        <img class="feynman__img" src="./images/feynman.png" alt="Портрет Фейнмана"> 
+        <div class="feynman__img"></div> 
       </section>
 
       <section class="digits">
@@ -134,7 +137,7 @@
           <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
-          <div class="khan__block-container">
+          <div class="khan__book-container">
             <img class="khan__book-pic" src="./images_sprint-2/khan-book.jpg" alt="Книга Весь мир-школа">
             <a class="khan__buy-link" href="#" target="_blank">Купить книгу &rarr;</a>
           </div>
@@ -193,23 +196,31 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <div class="resources__logo-zone"> 
-          <img class="resources__logo" src="./images_sprint-2/logo/resources-arzamas.svg" alt="Логотип Arzamas">
-          <img class="resources__logo" src="./images_sprint-2/logo/resources-n1.svg" alt="Логотип N+1">
-          <img class="resources__logo" src="./images_sprint-2/logo/resources-strelka.svg" alt="Логотип Strelka">
-          <img class="resources__logo" src="./images_sprint-2/logo/resources-polka.svg" alt="Логотип Полка">
-        </div>
+        <ul class="resources__logo-zone"> 
+          <li>
+            <a href="#"><img class="resources__logo" src="./images_sprint-2/logo/resources-arzamas.svg" alt="Логотип Arzamas"></a>
+          </li>
+          <li>
+            <a href="#"><img class="resources__logo" src="./images_sprint-2/logo/resources-n1.svg" alt="Логотип N+1"></a>
+          </li>
+          <li>
+            <a href="#"><img class="resources__logo" src="./images_sprint-2/logo/resources-strelka.svg" alt="Логотип Strelka"></a>
+          </li>
+          <li>
+            <a href="#"><img class="resources__logo" src="./images_sprint-2/logo/resources-polka.svg" alt="Логотип Полка"></a>
+          </li>
+        </ul>
 
       </section>
     </main>
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img src="./images/logo_place_footer.svg" class="logo logo_place_footer" alt="ЯндексПрактикум"> 
+          <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy;2021. Анна Баранова</p>
         </div>
         <nav class="footer__column footer__column_content_info">
-          <h2 class="footer__column-heading">О Практикуме</h2>
+          <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
             <li>
               <a class="footer__column-link" href="#" target="_blank">Главная</a>
@@ -223,7 +234,7 @@
           </ul>
         </nav>
         <div class="footer__column footer__column_content_social">
-          <h2 class="footer__column-heading">Соцсети</h2>
+          <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__column-links">
             <li>
               <a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Facebook">Facebook</a>
